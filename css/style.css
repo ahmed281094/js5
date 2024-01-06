@@ -1,0 +1,321 @@
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --nav-color: #1e202b;
+    --text-color: #009ad8;
+    --main-transition: 0.5s;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  
+  .container {
+    width: 85%;
+    margin: auto;
+    padding: 0px 20px;
+  }
+  
+  .navBar {
+    background-color: var(--nav-color);
+    padding: 50px 0px;
+    overflow: hidden;
+    height: 150px;
+    transition: 1s;
+    position: absolute;
+    z-index: 999;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  
+  }
+  
+  
+  .navBar .navMax {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+ 
+  
+  .navBar .navMax .Logo h1 {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .navBar .navMax .Logo P {
+    font-size: 10px;
+    margin: 0px;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .navBar .navMax .Links a {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 25px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin-left: 10px;
+    transition: var(--main-transition);
+  }
+  
+  
+  
+  .navBar .navMax .Links a:hover {
+    border-color: var(--text-color);
+    color: #009ad8;
+  }
+  .navBar .navMax .Links .Active {
+    border-color: var(--text-color);
+    color: #009ad8;
+  }
+  
+  
+  
+  .Weather {
+    margin-top: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--nav-color);
+   
+    background-repeat: no-repeat;
+  }
+  
+  .Weather .inputShape {
+    width: 100%;
+    padding: 6px 6px;
+    border-radius: 40px;
+    background-color: #3b3d47;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    margin-top: 40px;
+  }
+  
+  .Weather .inputShape input {
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    color: white;
+  }
+  
+  .Weather .inputShape input:focus {
+    outline: none;
+  }
+  
+  .Weather .inputShape .btn {
+    padding: 8px 40px;
+    background-color: var(--text-color);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .Weather .weatherCards {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .Weather .weatherCards > div {
+    flex-basis: calc(100% / 3);
+    background-color: #323544;
+    font-family: sans-serif;
+  }
+  
+  .Weather .weatherCards .card_2 {
+    background-color: #262936;
+  }
+  
+  .Weather .weatherCards .card_1 .Day {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45 48 61);
+    color: #bfc1c8;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  .Weather .weatherCards .card_1 .info {
+    padding: 30px 20px;
+  }
+  
+  .Weather .weatherCards .card_1 .info .Location {
+    font-size: 18px;
+    color: #bfc1c8;
+  }
+  
+  .Weather .weatherCards .card_1 .info .Degree {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  
+  .Weather .weatherCards .card_1 .info .custom {
+    color: var(--text-color);
+    margin: 20px 0px;
+    font-size: 14px;
+  }
+  
+  .Weather .weatherCards .card_1 .info .speedWind {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .Weather .weatherCards .card_1 .info .speedWind span {
+    margin-right: 20px;
+    color: #bfc1c8;
+  }
+  
+  
+  
+  .Weather .weatherCards .crd {
+    text-align: center;
+  }
+  
+  .Weather .weatherCards .crd .dayOnly {
+    padding: 10px;
+    font-size: 14px;
+    color: #bfc1c8;
+  }
+  
+  .Weather .weatherCards .card_2 .dayOnly {
+    background-color: #222530;
+  }
+  
+  .Weather .weatherCards .card_3 .dayOnly {
+    background-color: rgb(45 48 61);
+  }
+  .Weather .weatherCards .crd .Inf {
+    padding: 50 px 20px 10px;
+  }
+  
+ 
+  .Weather .weatherCards .crd .Inf .Deg {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .Weather .weatherCards .crd .Inf .Deg + span {
+    font-size: 16px;
+    color: #bfc1c8;
+  }
+  
+  .Weather .weatherCards .crd .Inf .custom {
+    margin: 20px 0px;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  footer {
+    padding: 50px 0px;
+    background-color: #262936;
+  }
+  
+  footer .row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  footer .row .Shape {
+    flex-basis: 65%;
+  }
+  
+  footer .row .inputShape {
+    padding: 6px 6px;
+    border-radius: 40px;
+    background-color: var(--nav-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .row .inputShape input {
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    color: white;
+  }
+  
+  footer .row .inputShape input:focus {
+    outline: none;
+    background-color: transparent;
+  }
+  
+  footer .row .inputShape .btn {
+    padding: 8px 40px;
+    background-color: var(--text-color);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  footer .row .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer .row .icons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--nav-color);
+    transition: var(--main-transition);
+  }
+  
+  footer .row .icons span i {
+    color: var(--text-color);
+    font-size: 16px;
+    transition: var(--main-transition);
+  }
+  footer .row .icons span:hover {
+    background-color: var(--text-color);
+  }
+  
+  footer .row .icons span:hover i {
+    color: white;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #bfc1c8;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  footer .madeBy {
+    font-size: 13px;
+    color: #0d0e13;
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+  }
